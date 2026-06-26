@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BugHunter Tracker — Bug Bounty Dashboard</title>
+  <meta name="description" content="Track your bug bounty findings, earnings, and progress. Syncs across devices." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Chart.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+
+  <!-- QRCode for 2FA setup -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+  <!-- App styles -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Favicon: shield+bug -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%231a1f2e'/><path d='M50 10 L80 22 L80 52 C80 68 65 82 50 90 C35 82 20 68 20 52 L20 22 Z' fill='%23f78166' opacity='0.9'/><text y='.72em' font-size='44' x='26'>🐛</text></svg>" />
+</head>
+<body>
+  <div id="app-root">
+    <div style="min-height:100vh;display:flex;align-items:center;justify-content:center;color:#8b949e;font-family:Inter,sans-serif;font-size:14px;background:#0d1117;">
+      <div style="text-align:center;">
+        <svg width="40" height="40" viewBox="0 0 100 100" style="margin-bottom:12px;display:block;margin-left:auto;margin-right:auto;">
+          <rect width="100" height="100" rx="20" fill="#1a1f2e"/>
+          <path d="M50 10 L80 22 L80 52 C80 68 65 82 50 90 C35 82 20 68 20 52 L20 22 Z" fill="#f78166" opacity="0.9"/>
+          <text y=".72em" font-size="44" x="26">🐛</text>
+        </svg>
+        Loading BugHunter Tracker…
+      </div>
+    </div>
+  </div>
+
+  <script src="js/app.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => App.boot());
+  </script>
+</body>
+</html>
